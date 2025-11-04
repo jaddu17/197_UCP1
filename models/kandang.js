@@ -25,13 +25,13 @@ module.exports = (sequelize, DataTypes) => {
             allowNull : false
         },
         Tahun_Lahir : {
-            type : DataTypes.DATE,
+            type : DataTypes.INTEGER,
             allowNull : false
         }
     }, {
         tableName : 'kandang',
-        timestamps : true,
-        freezeTableName : true
+        timestamps : false,
+        freezeTableName : false
     });
     return Komik;
 }
